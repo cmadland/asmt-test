@@ -1,0 +1,24 @@
+# Technology-Integrated Assessment in Higher Education: A Literature Review {-}
+
+
+
+```{R}
+ggdotchart(themes, x = "theme", y = "citations",          # requires `easyGgplot2`, `ggplot2`, `ggpubr` 
+            color = "#440154",                                # Color by groups
+            palette = c("#00AFBB", "#E7B800", "#FC4E07"), # Custom color palette
+            sorting = "descending",                       # Sort value in descending order
+            add = "segments",                             # Add segments from y = 0 to dots
+            rotate = TRUE,                                # Rotate vertically
+            dot.size = 9,                                 # Large dot size
+            label = round(themes$citations),                        # Add citations values as dot labels
+            font.label = list(color = "white", size = 10, 
+                              vjust = 0.5),               # Adjust label parameters
+            ggtheme = theme_pubr(),                        # ggplot2 theme
+            ylab="Citation Count",
+            xlab="Theme"
+ )
+```
+
+```{R}
+2+2
+```
